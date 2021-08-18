@@ -18,6 +18,13 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
+  push:
+    branches:
+      - master
+    paths:
+      - 'Config_Files/CanBox.config'
+  schedule:
+    - cron: 0 8 * * 5
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
