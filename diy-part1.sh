@@ -13,8 +13,12 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+# Modify default IP
+sed -i 's/192.168.1.1/4.1.1.1/g' package/base-files/files/bin/config_generate
 # 修改机器名称
-sed -i 's/OpenWrt/CM520-97F/g' package/base-files/files/bin/config_generate
+sed -i 's/openwrt/CM520-97F/g' package/base-files/files/bin/config_generate
+# 修改机器初始密码
+sed -i 's/root:$1$N4/f5Vcd$7LygRu1WrAhqs/vmuC4Ty.:18817:0:99999:7:::/root::0:0:99999:7:::/g' /etc/shadow
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
