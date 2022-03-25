@@ -27,7 +27,7 @@ sed -i 's/root::0:0:99999:7:::/root::0:0:99999:7:::/g' package/base-files/files/
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone https://github.com/kenzok8/small.git package/small
-git clone https://github.com/mwarning/zerotier-openwrt.git package/zerotier
+git clone https://github.com/mwarning/zerotier-openwrt.git package/zerotier-one
 cp -rf zerotier-openwrt/zerotier package/
 rm -rf zerotier-openwrt/
 
