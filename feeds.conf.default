@@ -5,4 +5,4 @@ src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-19.07
 #src-link custom /usr/src/openwrt/custom-feed
 src-git lienol https://github.com/Lienol/openwrt-package.git;main
 src-git other https://github.com/Lienol/openwrt-package.git;other
-src-git NueXini https://github.com/NueXini/NueXini_Packages.git;openwrt-19.07
+src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git;openwrt-19.07
