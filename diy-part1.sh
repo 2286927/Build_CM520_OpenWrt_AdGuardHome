@@ -25,7 +25,7 @@ sed -i 's/root::0:0:99999:7:::/root::0:0:99999:7:::/g' package/base-files/files/
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 #sed -i '$a src-git dockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default
 #sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
-sed -i '$a src-git NueXiniPackages https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
+#sed -i '$a src-git NueXiniPackages https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
 #git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 #git clone https://github.com/kenzok8/small.git package/small
 #git clone https://github.com/kiddin9/openwrt-packages.git package/kiddin9
@@ -34,7 +34,7 @@ sed -i '$a src-git NueXiniPackages https://github.com/NueXini/NueXini_Packages.g
 #Add The Theme：luci-theme-opentomcat
 #git clone https://github.com/Cosme927/luci-theme-opentomcat package/luci-theme-opentomcat
 # zerotier
-sed -i 's/PKG_VERSION:=.*/PKG_VERSION:=1.8.4/g' feeds/NueXiniPackages/luci-app-zerotier/Makefile
+sed -i 's/PKG_VERSION:=.*/PKG_VERSION:=1.8.4/g' /openwrt/feeds/packages/net/zerotier/Makefile
 #sed -i 's/PKG_HASH:=.*/PKG_HASH:=2866a4ef9193cca0a9f0fe528a0dea00c13cb0fd714bf388a0300cb6f3639b3b/g' feeds/packages/net/zerotier/Makefile
 #rm -rf feeds/packages/net/zerotier
 #cp -rf $GITHUB_WORKSPACE/general/zerotier feeds/packages/net
