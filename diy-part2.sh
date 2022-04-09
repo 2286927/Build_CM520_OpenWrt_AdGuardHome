@@ -15,3 +15,4 @@ sed -i 's/OpenWrt/CM520-79F/g' package/base-files/files/bin/config_generate
 sed -i 's/root:.*:0:0:99999:7:::/root::0:0:99999:7:::/g' package/base-files/files/etc/shadow
 # zerotier
 sed -i 's/PKG_VERSION:=.*/PKG_VERSION:=1.8.4/g' feeds/packages/net/zerotier/Makefile
+rm -rf feeds/small/v2ray-core
