@@ -18,15 +18,15 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-  push:
-    branches:
-      - master
-    paths:
-      - 'Config_Files/CanBox_Lienol.config'
-  schedule:
-    - cron: 0 2 * * 5
-  watch:
-    types: started
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - 'Config_Files/CanBox_Lienol.config'
+#  schedule:
+#    - cron: 0 2 * * 5
+#  watch:
+#    types: started
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
