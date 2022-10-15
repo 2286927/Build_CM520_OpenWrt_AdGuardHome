@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build_Canbox_Lienol
+name: Build_Canbox_Lienol_AdGuardHome
 
 on:
   repository_dispatch:
@@ -32,7 +32,7 @@ env:
   REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: 21.02
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: Config_Files/CanBox_Lienol.config
+  CONFIG_FILE: Config_Files/CanBox_Lienol_AdGuardHome.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
@@ -201,12 +201,13 @@ jobs:
     - name: Upload OpenWrt Firmware to Release
       uses: ncipollo/release-action@v1
       with:
-        name: Canbox_Lienol ${{ env.PRODUCT_NAME }}${{ env.DATE }}
-        tag: Canbox_Lienol${{ env.FILE_NAME }}
+        name: Canbox_Lienol_AdGuardHome ${{ env.PRODUCT_NAME }}${{ env.DATE }}
+        tag: Canbox_Lienol_AdGuardHome${{ env.FILE_NAME }}
         artifacts: ${{ env.FIRMWARE }}/*
         allowUpdates: true
         removeArtifacts: true
         token: ${{ secrets.GITHUB_TOKEN }}
         body: |
           * 星际宝盒CM520-79F固件
+          * AdGuardHome
           *Default username: root
