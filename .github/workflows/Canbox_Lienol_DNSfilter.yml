@@ -210,4 +210,4 @@ jobs:
         body: |
           * 星际宝盒CM520-79F固件
           * DNSfilter
-          *Default username: root
+          * Default username: root
