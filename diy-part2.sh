@@ -20,3 +20,5 @@ sed -i 's/OpenWrt/CM520-79F-Home/g' package/base-files/files/bin/config_generate
 #rm -rf feeds/small/v2ray-core
 # DNS Cache FixUP
 echo -e "#max-ttl=600\nneg-ttl=600\nmin-cache-ttl=3600" >> package/network/services/dnsmasq/files/dnsmasq.conf
+# 修改连接数
+sed -i 's/net.netfilter.nf_conntrack_max=.*/net.netfilter.nf_conntrack_max=165535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
