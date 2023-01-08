@@ -31,6 +31,7 @@
 # sed -i '$a src-git dnsfilter https://github.com/kiddin9/luci-app-dnsfilter' feeds.conf.default
 git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
 git clone https://github.com/kenzok8/small-package package/small-package
+git clone --depth=1 -b luci https://github.com/bootli/luci-app-turboacc.git package/luci-app-turboacc
 #git clone https://github.com/kenzok8/openwrt-packages package/kenzo
 #git clone https://github.com/kenzok8/small package/small
 # sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
