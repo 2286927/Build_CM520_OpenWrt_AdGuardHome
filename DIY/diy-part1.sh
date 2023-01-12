@@ -35,7 +35,8 @@
 # sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 git clone https://github.com/kenzok8/small-package package/small-package
 #git clone https://github.com/bootli/luci-app-turboacc.git package/small-package/luci-app-turboacc
-git clone https://github.com/deplives/luci-app-turboacc.git package/small-package/luci-app-turboacc
+#git clone https://github.com/deplives/luci-app-turboacc.git package/small-package/luci-app-turboacc
+git clone https://github.com/imapproxy/luci-app-turboacc.git package/small-package/luci-app-turboacc
 git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
 #git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
 #Add The Theme：luci-theme-opentomcat
