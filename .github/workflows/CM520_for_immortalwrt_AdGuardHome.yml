@@ -216,4 +216,5 @@ jobs:
         body: |
           * 星际宝盒CM520-79F_Home&immortalwrt固件
           * AdGuardHome
+          * master
           * Default username: root
