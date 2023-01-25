@@ -208,4 +208,5 @@ jobs:
         body: |
           * 星际宝盒CM520-79F固件
           * DNSfilter
+          * REPO_BRANCH: openwrt-21.02
           * Default username: root
