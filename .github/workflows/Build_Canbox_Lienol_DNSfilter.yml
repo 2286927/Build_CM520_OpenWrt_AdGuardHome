@@ -56,7 +56,8 @@ jobs:
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get -qq update
-        sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-latest)
+        #sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-latest)
+        sudo -E apt-get -qq install $(curl -fsSL https://is.gd/depends_ubuntu_2204)
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
@@ -209,5 +210,6 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         body: |
           * 星际宝盒CM520-79F固件
+          * REPO_BRANCH: 21.02
           * DNSfilter
           * Default username: root
