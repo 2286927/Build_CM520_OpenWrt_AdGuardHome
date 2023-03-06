@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: 1Canbox_Lienol_AdGuardHome
+name: Canbox_Lienol_latest
 
 on:
   repository_dispatch:
@@ -31,7 +31,8 @@ on:
 env:
   REPO_URL: https://github.com/Lienol/openwrt
   #REPO_BRANCH: 21.02
-  REPO_BRANCH: master
+  REPO_BRANCH: 22.03
+  #REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Config_Files/CanBox/Lienol_AdGuardHome.config
   DIY_P1_SH: DIY/diy-part1.sh
@@ -45,7 +46,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
@@ -57,7 +58,8 @@ jobs:
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get -qq update
-        sudo -E apt-get -qq install $(curl -fsSL https://raw.githubusercontent.com/2286927/OpenWrtDependenciesList/main/Lienol)
+        sudo -E apt-get -qq install $(curl -fsSL https://is.gd/depends_ubuntu_2204)
+        #sudo -E apt-get -qq install $(curl -fsSL https://raw.githubusercontent.com/2286927/OpenWrtDependenciesList/main/Lienol)
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
@@ -202,8 +204,8 @@ jobs:
     - name: Upload OpenWrt Firmware to Release
       uses: ncipollo/release-action@v1
       with:
-        name: 1Canbox_Lienol_AdGuardHome ${{ env.PRODUCT_NAME }}${{ env.DATE }}
-        tag: 1Canbox_Lienol_AdGuardHome${{ env.FILE_NAME }}
+        name: Canbox_Lienol_latest ${{ env.PRODUCT_NAME }}${{ env.DATE }}
+        tag: Canbox_Lienol_latest${{ env.FILE_NAME }}
         artifacts: ${{ env.FIRMWARE }}/*
         allowUpdates: true
         removeArtifacts: true
@@ -211,4 +213,5 @@ jobs:
         body: |
           * 星际宝盒CM520-79F固件
           * AdGuardHome
+          * REPO_BRANCH: 22.03
           * Default username: root
