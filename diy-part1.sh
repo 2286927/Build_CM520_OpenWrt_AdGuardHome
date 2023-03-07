@@ -53,3 +53,4 @@ git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
 #sed -i 's/PKG_HASH:=.*/PKG_HASH:=2866a4ef9193cca0a9f0fe528a0dea00c13cb0fd714bf388a0300cb6f3639b3b/g' feeds/packages/net/zerotier/Makefile
 #rm -rf feeds/packages/net/zerotier
 #cp -rf $GITHUB_WORKSPACE/general/zerotier feeds/packages/net
+rm -rf package/small-package/chinadns-ng
