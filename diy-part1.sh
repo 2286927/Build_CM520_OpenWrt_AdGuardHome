@@ -36,9 +36,12 @@ git clone https://github.com/kenzok8/small-package package/small-package
 ## Turbo ACC
 svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-turboacc package/small-package/luci-app-turboacc
 svn export --force https://github.com/kiddin9/openwrt-packages/trunk/shortcut-fe package/small-package/luci-app-turboacc/shortcut-fe
+## DDNS-Go
+svn export --force https://github.com/kiddin9/openwrt-packages/trunk/ddnsgo package/kiddin-package/ddnsgo
+svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ddns-go package/kiddin-package/luci-app-ddns-go
 #
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-rclone package/small-package/luci-app-rclone
-git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
+#git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
 #git clone https://github.com/kenzok8/openwrt-packages package/kenzo
 #git clone https://github.com/kenzok8/small package/small
 # sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
@@ -54,3 +57,5 @@ git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
 #rm -rf feeds/packages/net/zerotier
 #cp -rf $GITHUB_WORKSPACE/general/zerotier feeds/packages/net
 rm -rf package/small-package/chinadns-ng
+rm -rf package/small-package/ddnsgo
+rm -rf package/small-package/luci-app-ddns-go
