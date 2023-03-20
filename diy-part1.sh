@@ -39,14 +39,15 @@ svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-tu
 svn export --force https://github.com/kiddin9/openwrt-packages/trunk/shortcut-fe package/small-package/luci-app-turboacc/shortcut-fe
 
 ## DDNS-Go
-svn export --force https://github.com/kiddin9/openwrt-packages/trunk/ddnsgo package/kiddin-package/ddnsgo
-svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ddns-go package/kiddin-package/luci-app-ddns-go
+git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
+#git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
+#svn export --force https://github.com/kiddin9/openwrt-packages/trunk/ddnsgo package/kiddin-package/ddnsgo
+#svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ddns-go package/kiddin-package/luci-app-ddns-go
 #svn export --force https://github.com/immortalwrt/luci/trunk/applications/luci-app-ddns-go package/immortalwrt/luci-app-ddns-go
 #svn export --force https://github.com/immortalwrt/packages/trunk/net/ddns-go package/immortalwrt/luci-app-ddns-go
 #
 
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-rclone package/small-package/luci-app-rclone
-#git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
 #git clone https://github.com/kenzok8/openwrt-packages package/kenzo
 #git clone https://github.com/kenzok8/small package/small
 # sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
