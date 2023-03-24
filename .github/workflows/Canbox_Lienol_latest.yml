@@ -213,5 +213,5 @@ jobs:
         body: |
           * 星际宝盒CM520-79F固件
           * AdGuardHome
-          * REPO_BRANCH: 22.03
+          * REPO_BRANCH: master
           * Default username: root
