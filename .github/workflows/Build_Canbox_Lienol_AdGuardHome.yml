@@ -30,8 +30,8 @@ on:
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
-  #REPO_BRANCH: 21.02
-  REPO_BRANCH: 22.03
+  REPO_BRANCH: 21.02
+  #REPO_BRANCH: 22.03
   #REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Config_Files/CanBox_Lienol_AdGuardHome.config
