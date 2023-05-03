@@ -22,15 +22,19 @@ sed -i 's/ImmortalWrt/CM520-79F-Home/g' package/base-files/files/bin/config_gene
 # DNS Cache FixUP
 # echo -e "#max-ttl=600\nneg-ttl=600\nmin-cache-ttl=3600" >> package/network/services/dnsmasq/files/dnsmasq.conf
 ####### Modify the version number
-## sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
-## echo "DISTRIB_DESCRIPTION='ImmortalWrt +%V'" >> package/base-files/files/etc/openwrt_release
-## sed -i "s/ImmortalWrt /洲·Cy build $(TZ=UTC-8 date "+%Y.%m.%d") @ ImmortalWrt /g" package/base-files/files/etc/openwrt_release
-sed -i 's/os.date()/os.date("%Y-%m-%d %H:%M:%S")/g' package/lean/autocore/files/arm/index.htm
+sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
+echo "DISTRIB_DESCRIPTION='ImmortalWrt $('+%V')'" >> package/base-files/files/etc/openwrt_release
+sed -i "s/ImmortalWrt /洲·Cy build $(TZ=UTC-8 date "+%Y.%m.%d") @ ImmortalWrt /g" package/base-files/files/etc/openwrt_release
 
-sed -i '741a\
-                <tr><td width="33%">&#32534;&#35793;&#32773;&#58;&#32;&#27954;&#183;&#67;&#121;</td><td><a href="https://github.com/2286927/Build_CM520_OpenWrt_AdGuardHome" style="color: black;" target="_blank">&#32534;&#35793;&#22320;&#22336;</a></td></tr>\
-                <tr><td width="33%">&#28304;&#30721;&#58;&#32;&#76;&#105;&#101;&#110;&#111;&#108;</td><td><a href="https://github.com/Lienol/openwrt" style="color: black;" target="_blank">&#28304;&#30721;&#38142;&#25509;</a></td></tr>
-' package/lean/autocore/files/arm/index.htm
+sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
+echo "DISTRIB_DESCRIPTION='OpenWrt +%V'" >> package/base-files/files/etc/openwrt_release
+sed -i "s/OpenWrt /洲·Cy build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/base-files/files/etc/openwrt_release
+# # sed -i 's/os.date()/os.date("%Y-%m-%d %H:%M:%S")/g' package/lean/autocore/files/arm/index.htm
+# # 
+# # sed -i '741a\
+# #                 <tr><td width="33%">&#32534;&#35793;&#32773;&#58;&#32;&#27954;&#183;&#67;&#121;</td><td><a href="https://github.com/2286927/Build_CM520_OpenWrt_AdGuardHome" style="color: black;" target="_blank">&#32534;&#35793;&#22320;&#22336;</a></td></tr>\
+# #                 <tr><td width="33%">&#28304;&#30721;&#58;&#32;&#76;&#105;&#101;&#110;&#111;&#108;</td><td><a href="https://github.com/Lienol/openwrt" style="color: black;" target="_blank">&#28304;&#30721;&#38142;&#25509;</a></td></tr>
+# # ' package/lean/autocore/files/arm/index.htm
 # DNS Cache FixUP
 echo -e "#max-ttl=600\nneg-ttl=600\nmin-cache-ttl=3600" >> package/network/services/dnsmasq/files/dnsmasq.conf
 # 修改连接数
