@@ -65,3 +65,4 @@ svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-rclone pac
 #rm -rf package/small-package/chinadns-ng
 rm -rf package/small-package/ddnsgo
 rm -rf package/small-package/luci-app-ddns-go
+rm -rf package/small-package/transmission-web-control
