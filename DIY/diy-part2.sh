@@ -20,5 +20,10 @@ sed -i 's/OpenWrt/CM520-79F-Home/g' package/base-files/files/bin/config_generate
 # 修改连接数
 sed -i 's/net.netfilter.nf_conntrack_max=.*/net.netfilter.nf_conntrack_max=165535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 
+####### Modify the version number
+sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
+echo "DISTRIB_DESCRIPTION='OpenWrt $('%V')'" >> package/base-files/files/etc/openwrt_release
+sed -i "s/OpenWrt /\洲\·\C\y \build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/base-files/files/etc/openwrt_release
+
 # Insert command to delete password
 sed -i '2a\echo \"root\:123450\" | chpasswd' package/base-files/files/etc/rc.local
