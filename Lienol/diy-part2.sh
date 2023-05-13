@@ -59,3 +59,6 @@ rm -rf package/small-package/homeproxy
 rm -rf package/small-package/luci-app-macvlan
 rm -rf package/small-package/shadowsocks-libev
 rm -rf package/small-package/upx
+
+# Insert command to delete password
+sed -i '2a\echo \"root\:123450\" | chpasswd' package/base-files/files/etc/rc.local
