@@ -41,3 +41,13 @@ sed -i "s/'UTC'/'CST-8'\n   set system.@system[-1].zonename='Asia\/Shanghai'/g" 
 sed -i 's/time1\.apple\.com/ntp\.ntsc\.ac\.cn/g' package/base-files/files/bin/config_generate
 sed -i 's/time1\.google\.com/ntp\.tencent\.com/g' package/base-files/files/bin/config_generate
 sed -i 's/time\.cloudflare\.com/ntp1\.aliyun\.com/g' package/base-files/files/bin/config_generate
+
+# Add/Remove Plugins
+rm -rf package/small-package/ddnsgo
+rm -rf package/small-package/luci-app-ddns-go
+rm -rf package/small-package/firewall4
+rm -rf package/small-package/luci-app-xray
+rm -rf package/small-package/homeproxy
+rm -rf package/small-package/luci-app-macvlan
+rm -rf package/small-package/shadowsocks-libev
+rm -rf package/small-package/upx
