@@ -13,7 +13,7 @@
 sed -i 's/192.168.1.1/172.16.1.1/g' package/base-files/files/bin/config_generate
 # 修改机器名称
 sed -i 's/OpenWrt/CM520-79F-Home/g' package/base-files/files/bin/config_generate
-sed -i 's/ImmortalWrt/CM520-79F-Home/g' package/base-files/files/bin/config_generate
+# ##sed -i 's/ImmortalWrt/CM520-79F-Home/g' package/base-files/files/bin/config_generate
 # 修改机器初始密码
 #sed -i 's/root::0:0:99999:7:::/root::0:0:99999:7:::/g' package/base-files/files/etc/shadow
 # zerotier
@@ -22,13 +22,13 @@ sed -i 's/ImmortalWrt/CM520-79F-Home/g' package/base-files/files/bin/config_gene
 # DNS Cache FixUP
 # echo -e "#max-ttl=600\nneg-ttl=600\nmin-cache-ttl=3600" >> package/network/services/dnsmasq/files/dnsmasq.conf
 ####### Modify the version number
-sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
-echo "DISTRIB_DESCRIPTION='ImmortalWrt $('%V')'" >> package/base-files/files/etc/openwrt_release
-sed -i "s/ImmortalWrt /洲·Cy build $(TZ=UTC-8 date "+%Y.%m.%d") @ ImmortalWrt /g" package/base-files/files/etc/openwrt_release
+# ##sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
+# ##echo "DISTRIB_DESCRIPTION='ImmortalWrt $('%V')'" >> package/base-files/files/etc/openwrt_release
+# ##sed -i "s/ImmortalWrt /洲·Cy build $(TZ=UTC-8 date "+%Y.%m.%d") @ ImmortalWrt /g" package/base-files/files/etc/openwrt_release
 
 sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
 echo "DISTRIB_DESCRIPTION='OpenWrt $('%V')'" >> package/base-files/files/etc/openwrt_release
-sed -i "s/OpenWrt /洲·Cy build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/base-files/files/etc/openwrt_release
+sed -i "s/OpenWrt /\洲\·\C\y \build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/base-files/files/etc/openwrt_release
 # # sed -i 's/os.date()/os.date("%Y-%m-%d %H:%M:%S")/g' package/lean/autocore/files/arm/index.htm
 # # 
 # # sed -i '741a\
