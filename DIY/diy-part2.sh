@@ -26,4 +26,4 @@ echo "DISTRIB_DESCRIPTION='OpenWrt $('%V')'" >> package/base-files/files/etc/ope
 sed -i "s/OpenWrt /\洲\·\C\y \build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/base-files/files/etc/openwrt_release
 
 # Insert command to delete password
-sed -i '2a\echo \"root\:123450\" | chpasswd' package/base-files/files/etc/rc.local
+#sed -i '2a\echo \"root\:123450\" | chpasswd' package/base-files/files/etc/rc.local
