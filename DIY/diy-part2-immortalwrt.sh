@@ -48,4 +48,4 @@ sed -i 's/time\.cloudflare\.com/ntp1\.aliyun\.com/g' package/base-files/files/bi
 #sed -i '2a\echo \"root\:123450\" | chpasswd' package/base-files/files/etc/rc.local
 
 # Add/Remove Plugins
-rm -rf package/feeds/packages/acl
+#rm -rf package/feeds/packages/acl
