@@ -34,7 +34,8 @@ env:
   #REPO_BRANCH: 22.03
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   #REPO_BRANCH: openwrt-21.02
-  REPO_BRANCH: master
+  REPO_BRANCH: openwrt-23.05
+  #REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Config_Files/CM520_for_immortalwrt_AdGuardHome.config
   DIY_P1_SH: DIY/diy-part1-immortalwrt.sh
@@ -217,6 +218,6 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         body: |
           * 星际宝盒CM520-79F_Home&immortalwrt固件
-          * AdGuardHome
-          * master
+          * AdGuardHome-Home
+          * openwrt-23.05
           * Default username: root
