@@ -67,7 +67,7 @@ rm -rf turboacc_tmp
 ####################################
 ### Turbo ACC of End
 ####################################
-svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-rclone feeds/luci/applications/luci-app-rclone
+
 # git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
 #git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
 #git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
