@@ -65,7 +65,7 @@ cp -RT ./turboacc_tmp/turboacc/libnftnl-1.2.5/libnftnl ./package/libs/libnftnl
 cp -RT ./turboacc_tmp/turboacc/nftables-1.0.7/nftables ./package/network/utils/nftables
 rm -rf turboacc_tmp
 ####################################
-### Turbo ACC End
+### Turbo ACC of End
 ####################################
 svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-rclone feeds/luci/applications/luci-app-rclone
 # git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
