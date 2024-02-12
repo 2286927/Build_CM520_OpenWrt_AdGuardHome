@@ -77,4 +77,5 @@ git clone https://github.com/kenzok8/small feeds/small
 #sed -i 's/PKG_VERSION:=.*/PKG_VERSION:=1.8.5/g' feeds/packages/net/zerotier/Makefile
 #sed -i 's/PKG_HASH:=.*/PKG_HASH:=2866a4ef9193cca0a9f0fe528a0dea00c13cb0fd714bf388a0300cb6f3639b3b/g' feeds/packages/net/zerotier/Makefile
 #rm -rf feeds/packages/net/zerotier
+rm -rf feeds/packages/net/adguardhome
 #cp -rf $GITHUB_WORKSPACE/general/zerotier feeds/packages/net
