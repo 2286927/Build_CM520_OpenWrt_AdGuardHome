@@ -37,7 +37,7 @@
 # git clone https://github.com/kenzok8/small feeds/small
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone https://github.com/kenzok8/small.git package/small
-rm -rf package/openwrt-packages/luci-app-adguardhome
+#rm -rf package/openwrt-packages/luci-app-adguardhome
 rm -rf package/openwrt-packages/adguardhome
 rm -rf package/openwrt-packages/luci-app-ddns-go
 rm -rf package/openwrt-packages/ddns-go
