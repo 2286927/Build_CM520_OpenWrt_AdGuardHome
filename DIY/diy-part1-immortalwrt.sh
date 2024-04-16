@@ -41,6 +41,7 @@ git clone https://github.com/kenzok8/small.git package/small
 rm -rf package/openwrt-packages/adguardhome
 rm -rf package/openwrt-packages/luci-app-ddns-go
 rm -rf package/openwrt-packages/ddns-go
+rm -rf package/small/xray-core
 #git clone https://github.com/kenzok8/small-package feeds/small-package
 #git clone https://github.com/bootli/luci-app-turboacc.git package/small-package/luci-app-turboacc
 #git clone https://github.com/deplives/luci-app-turboacc.git package/small-package/luci-app-turboacc
